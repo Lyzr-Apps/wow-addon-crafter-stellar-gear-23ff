@@ -1,0 +1,46 @@
+{
+  "agents": {
+    "addon_development_manager": {
+      "agent_id": "699a2e6ebade9b14a87bd520",
+      "name": "Addon Development Manager",
+      "type": "manager",
+      "managed_agents": [
+        "699a2e5d2e5953640779a310",
+        "699a2e5da01aa32678e1d828",
+        "699a2e5e804d670ac9be59ab"
+      ]
+    },
+    "requirements_analyzer": {
+      "agent_id": "699a2e5d2e5953640779a310",
+      "name": "Requirements Analyzer Agent",
+      "type": "sub-agent"
+    },
+    "code_generator": {
+      "agent_id": "699a2e5da01aa32678e1d828",
+      "name": "Code Generator Agent",
+      "type": "sub-agent"
+    },
+    "ui_layout": {
+      "agent_id": "699a2e5e804d670ac9be59ab",
+      "name": "UI Layout Agent",
+      "type": "sub-agent"
+    },
+    "iteration_feedback": {
+      "agent_id": "699a2e8e7a83a1f004cc0d4c",
+      "name": "Iteration Feedback Agent",
+      "type": "independent"
+    },
+    "github_delivery": {
+      "agent_id": "699a2ea12e5953640779a316",
+      "name": "GitHub Delivery Agent",
+      "type": "independent",
+      "tools": ["GITHUB_CREATE_A_REPOSITORY_FOR_THE_AUTHENTICATED_USER", "GITHUB_CREATE_A_GIST"]
+    },
+    "addon_packager": {
+      "agent_id": "699a2e8fa01aa32678e1d82e",
+      "name": "Addon Packager Agent",
+      "type": "independent",
+      "file_output": true
+    }
+  }
+}

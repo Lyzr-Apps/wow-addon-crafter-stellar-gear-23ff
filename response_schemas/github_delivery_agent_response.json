@@ -1,0 +1,30 @@
+{
+  "agent_name": "GitHub Delivery Agent",
+  "agent_id": "699a2ea12e5953640779a316",
+  "description": "Commits generated addon files to the specified GitHub repository with proper directory structure, commit messages, and branch management",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "repository_name": "string",
+    "repository_url": "string",
+    "gist_url": "string",
+    "commit_message": "string",
+    "files_committed": [
+      "string"
+    ],
+    "status": "string",
+    "message": "string"
+  },
+  "example_response": {
+    "repository_name": "sample string",
+    "repository_url": "sample string",
+    "gist_url": "sample string",
+    "commit_message": "sample string",
+    "files_committed": [
+      "sample string"
+    ],
+    "status": "sample string",
+    "message": "sample string"
+  }
+}

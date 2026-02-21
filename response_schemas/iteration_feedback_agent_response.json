@@ -1,0 +1,44 @@
+{
+  "agent_name": "Iteration Feedback Agent",
+  "agent_id": "699a2e8e7a83a1f004cc0d4c",
+  "description": "Processes developer feedback on generated code and produces specific modification instructions, identifying which files, functions, or XML elements need changes",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "modifications": [
+      {
+        "filename": "string",
+        "section": "string",
+        "change_description": "string",
+        "updated_content": "string"
+      }
+    ],
+    "updated_files": [
+      {
+        "filename": "string",
+        "content": "string",
+        "file_type": "string"
+      }
+    ],
+    "feedback_summary": "string"
+  },
+  "example_response": {
+    "modifications": [
+      {
+        "filename": "sample string",
+        "section": "sample string",
+        "change_description": "sample string",
+        "updated_content": "sample string"
+      }
+    ],
+    "updated_files": [
+      {
+        "filename": "sample string",
+        "content": "sample string",
+        "file_type": "sample string"
+      }
+    ],
+    "feedback_summary": "sample string"
+  }
+}

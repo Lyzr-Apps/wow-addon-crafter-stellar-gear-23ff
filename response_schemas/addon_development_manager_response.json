@@ -1,0 +1,36 @@
+{
+  "agent_name": "Addon Development Manager",
+  "agent_id": "699a2e6ebade9b14a87bd520",
+  "description": "Coordinates requirement analysis, code generation, and UI layout generation sub-agents; aggregates outputs into a unified addon code preview with all necessary files",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "addon_name": "string",
+    "files": [
+      {
+        "filename": "string",
+        "content": "string",
+        "file_type": "string",
+        "description": "string"
+      }
+    ],
+    "file_tree": "string",
+    "specification_summary": "string",
+    "generation_summary": "string"
+  },
+  "example_response": {
+    "addon_name": "sample string",
+    "files": [
+      {
+        "filename": "sample string",
+        "content": "sample string",
+        "file_type": "sample string",
+        "description": "sample string"
+      }
+    ],
+    "file_tree": "sample string",
+    "specification_summary": "sample string",
+    "generation_summary": "sample string"
+  }
+}

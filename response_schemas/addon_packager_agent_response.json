@@ -1,0 +1,38 @@
+{
+  "agent_name": "Addon Packager Agent",
+  "agent_id": "699a2e8fa01aa32678e1d82e",
+  "description": "Bundles all generated addon files into a properly structured ZIP file named as the addon directory, ready for direct extraction into WoW's Interface/AddOns folder",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "package_name": "string",
+    "addon_name": "string",
+    "files_included": [
+      "string"
+    ],
+    "file_count": "number",
+    "installation_path": "string",
+    "status": "string",
+    "message": "string"
+  },
+  "example_response": {
+    "package_name": "sample string",
+    "addon_name": "sample string",
+    "files_included": [
+      "sample string"
+    ],
+    "file_count": 0,
+    "installation_path": "sample string",
+    "status": "sample string",
+    "message": "sample string"
+  },
+  "has_module_outputs": true,
+  "module_outputs_example": {
+    "artifact_files": [
+      {
+        "file_url": "https://example.com/file.pdf"
+      }
+    ]
+  }
+}

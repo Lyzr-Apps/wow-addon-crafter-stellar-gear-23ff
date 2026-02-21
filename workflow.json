@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    {"id": "input_node", "type": "Input", "label": "Developer Addon Description", "nodeCategory": "input"},
+    {"id": "addon_manager", "type": "Agent", "label": "Addon Development Manager", "nodeCategory": "agent"},
+    {"id": "requirements_analyzer", "type": "Agent", "label": "Requirements Analyzer Agent", "nodeCategory": "agent"},
+    {"id": "code_generator", "type": "Agent", "label": "Code Generator Agent", "nodeCategory": "agent"},
+    {"id": "ui_layout", "type": "Agent", "label": "UI Layout Agent", "nodeCategory": "agent"},
+    {"id": "iteration_feedback", "type": "Agent", "label": "Iteration Feedback Agent", "nodeCategory": "agent"},
+    {"id": "github_delivery", "type": "Agent", "label": "GitHub Delivery Agent", "nodeCategory": "agent"},
+    {"id": "addon_packager", "type": "Agent", "label": "Addon Packager Agent", "nodeCategory": "agent"},
+    {"id": "output_node", "type": "Output", "label": "Generated Addon Output", "nodeCategory": "end"}
+  ],
+  "edges": [
+    {"source": "input_node", "target": "addon_manager"},
+    {"source": "addon_manager", "target": "requirements_analyzer"},
+    {"source": "addon_manager", "target": "code_generator"},
+    {"source": "addon_manager", "target": "ui_layout"},
+    {"source": "input_node", "target": "iteration_feedback"},
+    {"source": "input_node", "target": "github_delivery"},
+    {"source": "input_node", "target": "addon_packager"},
+    {"source": "addon_manager", "target": "output_node"},
+    {"source": "iteration_feedback", "target": "output_node"},
+    {"source": "github_delivery", "target": "output_node"},
+    {"source": "addon_packager", "target": "output_node"}
+  ]
+}
